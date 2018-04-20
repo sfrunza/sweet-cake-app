@@ -1,0 +1,43 @@
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: red;
+  background-color: transparent;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-default {
+
+     border-color: transparent;
+     -webkit-box-shadow: none;
+     background-color: transparent;
+}
+
+.navbar,
+.navbar-default {
+    background-image: none !important;
+    background-color: transparent;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url("http://www.tokkoro.com/picsup/2623939-cake-4k-best-picture-ever.jpg");
+    /* Full height */
+    height: 100%;
+    padding-bottom: 70px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

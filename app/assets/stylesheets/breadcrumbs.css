@@ -1,6 +1,6 @@
 div .copyright {
     padding-top: 3%;
-    color: yellow;
+    
 }
 
 .breadcrumb {
@@ -9,10 +9,9 @@ div .copyright {
    height:9rem;
    text-align: center;
    margin-left: 0rem;
-   margin-top: 10%;
    height:30%;
    margin-bottom: 0;
-   padding-top: 5%;
+   padding-top: 3%;
    background-color: transparent;
 
 }

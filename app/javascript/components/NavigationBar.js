@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
 const NavLink = ({ exact, to, eventKey, children }) =>
   <LinkContainer exact={exact} to={to} eventKey={eventKey}>
@@ -15,10 +16,21 @@ class NavigationBar extends Component {
 
     render(){
        return(
+         <div className="full-nav">
+
+          <div className="info-p">Follow us
+          <SocialIcon url="http://www.facebook.com" style={{ height: 30, width: 30 }}/>
+          <SocialIcon url="https://www.instagram.com" style={{ height: 30, width: 30 }}/>
+          <i className="fas fa-phone"> 617-202-3434</i>
+          </div>
+
+
+
+
           <Navbar collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand>
-                <Link to="home">Sweet-Cakes</Link>
+                <Link className="logo" to="home"><img src="http://www.ohmysweetcakes.co.uk/images/logo.png" /></Link>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
@@ -31,6 +43,7 @@ class NavigationBar extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          </div>
 
         )
     }

@@ -14,5 +14,6 @@
  *= require_self
  *= require navbar
  *= require breadcrumbs
+ *= require home
  *= require foundation_and_overrides
  */

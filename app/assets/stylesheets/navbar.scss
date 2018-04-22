@@ -39,6 +39,8 @@
    border-width: 1.1px;
    padding-right: 1%;
    text-align: right;
+   padding-top: 0.5%;
+   padding-bottom: 5px;
  }
 
  .navbar-brand>img {
@@ -74,3 +76,7 @@
 .full-nav.info-p{
   padding-left: 10%;
 }
+ .info-p a {
+   margin-right: 10px;
+   color: #777;
+ }

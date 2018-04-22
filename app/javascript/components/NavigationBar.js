@@ -20,7 +20,7 @@ class NavigationBar extends Component {
 
           <div className="info-p"><a>Follow us</a>
           <SocialIcon url="http://www.facebook.com" style={{ height: 30, width: 30 }}/>
-          <SocialIcon url="https://www.instagram.com" style={{ height: 30, width: 30 }}/>
+          <SocialIcon url="https://www.instagram.com" color="#C63DAA" style={{ height: 30, width: 30 }}/>
           <i className="fas fa-phone"> 617-202-3434</i>
           </div>
 

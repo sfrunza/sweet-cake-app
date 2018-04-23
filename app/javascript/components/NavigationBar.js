@@ -17,15 +17,11 @@ class NavigationBar extends Component {
     render(){
        return(
          <div className="full-nav">
-
           <div className="info-p"><a>Follow us</a>
-          <SocialIcon url="http://www.facebook.com" style={{ height: 30, width: 30 }}/>
-          <SocialIcon url="https://www.instagram.com" color="#C63DAA" style={{ height: 30, width: 30 }}/>
-          <i className="fas fa-phone"> 617-202-3434</i>
+            <SocialIcon url="http://www.facebook.com" style={{ height: 30, width: 30 }}/>
+            <SocialIcon url="https://www.instagram.com" color="#C63DAA" style={{ height: 30, width: 30 }}/>
+            <i className="fas fa-phone"> 617-202-3434</i>
           </div>
-
-
-
 
           <Navbar collapseOnSelect>
             <Navbar.Header>
@@ -43,7 +39,7 @@ class NavigationBar extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          </div>
+         </div>
 
         )
     }

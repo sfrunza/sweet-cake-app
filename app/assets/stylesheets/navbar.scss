@@ -1,5 +1,5 @@
 .navbar-default .navbar-nav>li>a {
-    background-color: transparent;
+  background-color: transparent;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: red;
@@ -14,60 +14,49 @@
 }
 
 .navbar-default {
-
-     border-color: transparent;
-     -webkit-box-shadow: none;
-     background-color: transparent;
+   border-color: transparent;
+   -webkit-box-shadow: none;
+   background-color: transparent;
 }
 
 .navbar,
 .navbar-default {
-    background-image: none !important;
-    background-color: transparent;
-    margin-bottom: 0%;
-    padding: 4px;
+  background-image: none !important;
+  background-color: transparent;
+  margin-bottom: 0%;
+  padding: 4px;
 }
 
- .info-p {
-   font-family: inherit;
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.6;
-   margin-bottom: 0.25rem;
-   text-rendering: optimizeLegibility;
-   border-bottom-style: groove;
-   border-width: 1.1px;
-   padding-right: 1%;
-   text-align: right;
-   padding-top: 0.5%;
-   padding-bottom: 5px;
- }
+.info-p {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+  text-rendering: optimizeLegibility;
+  border-bottom-style: groove;
+  border-width: 1.1px;
+  padding-right: 1%;
+  text-align: right;
+  padding-top: 0.5%;
+  padding-bottom: 5px;
+}
 
- .navbar-brand>img {
-    display: block;
-    height: 6em;
+.navbar-brand>img {
+  display: block;
+  height: 6em;
 }
 
 .navbar-right {
-    float: right!important;
-    margin-right: -15px;
-    font-family: 'Poppins', sans-serif;
+  float: right!important;
+  margin-right: -15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: -4%;
-}
-
-.fa-facebook-square {
-  font-size: 20px;
-  margin-right: 1%;
-  margin-left: 1%;
-}
-.fa-instagram {
-  font-size: 20px;
-  margin-right: 2%;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: -4%;
 }
 
 .fas.fa-phone {
@@ -76,7 +65,7 @@
 .full-nav.info-p{
   padding-left: 10%;
 }
- .info-p a {
-   margin-right: 10px;
-   color: #777;
- }
+.info-p a {
+ margin-right: 10px;
+ color: #777;
+}

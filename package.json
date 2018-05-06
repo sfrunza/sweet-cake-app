@@ -1,6 +1,10 @@
 {
   "name": "sweet-cakes",
   "private": true,
+  "engines": {
+    "node": ">=6.0.0",
+    "yarn": ">=0.25.2"
+  },
   "dependencies": {
     "@rails/webpacker": "~3.2.0",
     "aos": "^2.2.0",

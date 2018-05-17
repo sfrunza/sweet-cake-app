@@ -104,19 +104,19 @@ class QuestionForm extends Component {
           <h2 className="get-touch">GET IN TOUCH</h2>
           {errorDiv}
           <Row className="show-grid">
-           <Col md={6} mdPush={6}>
-             <TextField
-             placeholder='Email'
-             name='email'
-             value={this.state.email}
-             handleChange={this.handleChange}
-             />
-           </Col>
-           <Col md={6} mdPull={6}>
+           <Col md={6} >
              <TextField
              placeholder='Name'
              name='name'
              value={this.state.name}
+             handleChange={this.handleChange}
+             />
+           </Col>
+           <Col md={6}>
+             <TextField
+             placeholder='Email'
+             name='email'
+             value={this.state.email}
              handleChange={this.handleChange}
              />
            </Col>

@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  root 'homes#index'
-  devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
+  root 'homes#index'
+  
   get '/home' => 'homes#index'
   get '/pricing' => 'homes#index'
   get '/photo' => 'homes#index'
   get '/contact' => 'homes#index'
 
+  scope '/api' do
+    resources :costumers
+  end
 end

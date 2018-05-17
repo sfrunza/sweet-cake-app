@@ -7,23 +7,44 @@ import { SocialIcon } from 'react-social-icons';
 class Contact extends React.Component {
   constructor(props){
     super(props)
+    this.state = {
+      costumers: []
+    }
 
     this.addNewMessage = this.addNewMessage.bind(this)
   }
 
   addNewMessage(formPayload) {
-    fetch('/api/v1/questions', {
+    fetch('/api/costumers', {
+      credentials: 'same-origin',
       method: 'POST',
-      body: JSON.stringify(formPayload)
+      body: JSON.stringify(formPayload),
+      headers: { 'Content-Type': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+            error = new Error(errorMessage);
+        throw(error);
+      }
     })
     .then(response => response.json())
-    .then(responseData => {
-      this.setState({ messages: [...this.state.messages, responseData] })
+    .then(body => {
+      let newCostumer = this.state.costumers.concat(body.name)
+      this.setState({
+        reviews: newCostumer
+      })
     })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   render() {
     let addNewMessage = (formPayload) => this.addNewMessage(formPayload)
+    let costumers = this.state.costumers.map(costumer => {
+
+    })
      return(
        <div>
        <section data-scroll-index="5" className="social bg-darken">
@@ -58,6 +79,7 @@ class Contact extends React.Component {
        </section>
 
        <EmailForm addNewMessage={addNewMessage}/>
+       {costumers}
 
        </div>
      )

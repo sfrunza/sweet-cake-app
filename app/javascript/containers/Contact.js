@@ -50,21 +50,17 @@ class Contact extends React.Component {
          <section data-scroll-index="5" className="social bg-darken">
            <div className="container">
              <div className="row social-icons">
-               <a href="http://www.facebook.com" className="social-link col-md-3 col-6">
-                 <i className="fa fa-facebook" aria-hidden="true"></i>
-                 <span className="social-name">facebook</span>
+               <a href="http://www.facebook.com" className="social-link col-xs-6 col-sm-3">
+                 <span className="social-name"><i className="fa fa-facebook" aria-hidden="true"></i><br></br>facebook</span>
                </a>
-               <a href="https://www.twitter.com" className="social-link col-md-3 col-6">
-                 <i className="fa fa-twitter" aria-hidden="true"></i>
-                 <span className="social-name">twitter</span>
+               <a href="https://www.twitter.com" className="social-link col-xs-6 col-sm-3">
+                 <span className="social-name"><i className="fa fa-twitter" aria-hidden="true"></i><br></br>twitter</span>
                </a>
-               <a href="https://www.youtube.com" className="social-link col-md-3 col-6">
-                 <i className="fa fa-youtube" aria-hidden="true"></i>
-                 <span className="social-name">youtube</span>
+               <a href="https://www.youtube.com" className="social-link col-xs-6 col-sm-3">
+                 <span className="social-name"><i className="fa fa-youtube" aria-hidden="true"></i><br></br>youtube</span>
                </a>
-               <a href="https://www.instagram.com" className="social-link col-md-3 col-6">
-                 <i className="fa fa-instagram" aria-hidden="true"></i>
-                 <span className="social-name">instagram</span>
+               <a href="https://www.instagram.com" className="social-link col-xs-6 col-sm-3">
+                 <span className="social-name"><i className="fa fa-instagram" aria-hidden="true"></i><br></br>instagram</span>
                </a>
              </div>
            </div>

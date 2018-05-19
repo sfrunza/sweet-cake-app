@@ -13,10 +13,6 @@ const Prices = (props) => {
              <div className="price-option">
                <h3 className="price-option-name">ROUND CAKES</h3>
                <div className="price-option-main">
-                 <div className="price-value">
-                   <span className="price-currency">$</span>20<span className="pricing-desc">/class</span>
-                 </div>
-
                  <div className="price-option-features">
                 <p> 8"               8-10              $19.99</p>
                  <p>10"             14-18              $31.99</p>
@@ -32,10 +28,6 @@ const Prices = (props) => {
              <div className="price-option">
                <h3 className="price-option-name highlighted">SHEET CAKES</h3>
                <div className="price-option-main">
-                 <div className="price-value">
-                   <span className="price-currency">$</span>150<span className="pricing-desc">/mth</span>
-                 </div>
-
                  <div className="price-option-features">
               <p>   ¼ SHEET         18-20              $26.99</p>
               <p>   ½ SHEET         40-50              $54.99</p>
@@ -48,9 +40,6 @@ const Prices = (props) => {
              <div className="price-option">
                <h3 className="price-option-name">CUPCAKES </h3>
                <div className="price-option-main">
-                 <div className="price-value">
-                   <span className="price-currency">$</span>300<span className="pricing-desc">/mth</span>
-                 </div>
                  <div className="price-option-features">
                    <p>$8.00  ½ Dozen             $16.00 Dozen</p>
                  </div>

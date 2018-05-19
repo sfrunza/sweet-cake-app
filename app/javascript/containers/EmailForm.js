@@ -66,8 +66,10 @@ class QuestionForm extends Component {
     }
   }
   validateEmail(emails) {
-    if (emails === '' || emails === ' ') {
-      let newError = { email: 'Email field may not be blank.' }
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (!emails.match(mailformat)) {
+      let newError = { email: 'Valid email is required.' }
       this.setState({ errors: Object.assign(this.state.errors, newError) })
       return false
     } else {

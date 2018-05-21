@@ -15,7 +15,7 @@ class Contact extends React.Component {
   }
 
   addNewMessage(formPayload) {
-    fetch('/api/costumers', {
+    fetch(`/api/costumers`, {
       credentials: 'same-origin',
       method: 'POST',
       body: JSON.stringify(formPayload),
@@ -30,11 +30,11 @@ class Contact extends React.Component {
         throw(error);
       }
     })
-    .then(response => response.json())
+
     .then(body => {
-      let newCostumer = this.state.costumers.concat(body.name)
+      let newCostumer = this.state.costumers.concat(body)
       this.setState({
-        reviews: newCostumer
+        costumers: newCostumer
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
@@ -42,9 +42,7 @@ class Contact extends React.Component {
 
   render() {
     let addNewMessage = (formPayload) => this.addNewMessage(formPayload)
-    let costumers = this.state.costumers.map(costumer => {
 
-    })
      return(
        <div className="contacts-container">
          <section data-scroll-index="5" className="social bg-darken">

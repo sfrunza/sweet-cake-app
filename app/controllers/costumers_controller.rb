@@ -1,5 +1,5 @@
 class CostumersController < ApiController
-  before_action :set_costumer, only: [:show, :update, :destroy]
+
 
   # GET /costumers
   # GET /costumers.json
@@ -18,13 +18,11 @@ class CostumersController < ApiController
   # POST /costumers
   # POST /costumers.json
   def create
-    @costumer = Costumer.new(costumer_params)
+    @costumer_new = Costumer.new(costumer_params)
+    @costumer_new.save
+    @costumer = ContactForm.new(costumer_params)
+    @costumer.deliver
 
-    if @costumer.save
-      render :show, status: :created, location: @costumer
-    else
-      render json: @costumer.errors, status: :unprocessable_entity
-    end
   end
 
   # PATCH/PUT /costumers/1

@@ -3,13 +3,13 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root 'homes#index'
-  
+
   get '/home' => 'homes#index'
   get '/pricing' => 'homes#index'
   get '/photo' => 'homes#index'
   get '/contact' => 'homes#index'
 
   scope '/api' do
-    resources :costumers
+    resources :costumers, only: [:index, :create, :destroy, :update]
   end
 end

@@ -66,15 +66,15 @@ class Contact extends React.Component {
          <section className="container">
            <div className="col col-md-4">
                <h4>Phone Numbers</h4>
-                 <p>1-234-567-890</p>
-                 <p>1-987-654-321</p>
+                 <p className="paragraph">1-234-567-890</p>
+                 <p className="paragraph">1-987-654-321</p>
 
                <h4>Email Address</h4>
-                <p>contact@gmail.com</p>
+                <p className="paragraph">contact@gmail.com</p>
 
                <h4>Business Hours</h4>
-                <p>Mon-Fri : 9am - 9pm</p>
-                <p>Sat : 9am - 2pm</p>
+                <p className="paragraph">Mon-Fri : 9am - 9pm</p>
+                <p className="paragraph">Sat : 9am - 2pm</p>
             </div>
             <div className="col col-md-8">
                  <EmailForm addNewMessage={addNewMessage}/>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TextField from '../components/TextField'
-import { Col, Row} from 'react-bootstrap'
+import { Col, Row, Alert} from 'react-bootstrap'
 
 class QuestionForm extends Component {
   constructor(props) {
@@ -9,7 +9,8 @@ class QuestionForm extends Component {
       errors: {},
       name: '',
       email: '',
-      message: ''
+      message: '',
+      success: {}
     }
     this.handleClearForm = this.handleClearForm.bind(this)
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -26,7 +27,8 @@ class QuestionForm extends Component {
       errors: {},
       name: '',
       email: '',
-      message: ''
+      message: '',
+      success: {}
     })
   }
 
@@ -40,10 +42,13 @@ class QuestionForm extends Component {
       let formPayLoad = {
         name: this.state.name,
         email: this.state.email,
-        message: this.state.message
+        message: this.state.message,
+        success: this.state.success
       }
       this.props.addNewMessage(formPayLoad)
       this.handleClearForm(event)
+      let newSuccess = {success: 'Your message has been sent'}
+      this.setState({ success: Object.assign(this.state.success, newSuccess) })
     }
   }
 
@@ -96,15 +101,31 @@ class QuestionForm extends Component {
     let errorItems;
     if (Object.keys(this.state.errors).length > 0) {
       errorItems = Object.values(this.state.errors).map(error => {
-        return(<li key={error}>{error}</li>)
+        return(<p key={error}>{error}<br></br></p>)
       })
-      errorDiv = <div className="callout alert">{errorItems}</div>
+      errorDiv = <Alert bsStyle="danger">
+                    {errorItems}
+                 </Alert>
     }
+
+    let successDiv;
+    let successItem;
+    if (Object.keys(this.state.success).length > 0) {
+      successItem = Object.values(this.state.success).map(green => {
+        return(<p key={green}>{green}<br></br></p>)
+      })
+      successDiv = <Alert bsStyle="success">
+                    {successItem}
+                 </Alert>
+    }
+
+
     return (
       <Row className="show-grid">
         <form className="message-form" onSubmit={this.handleFormSubmit} >
           <h2 className="get-touch">GET IN TOUCH</h2>
           {errorDiv}
+          {successDiv}
           <Row className="show-grid">
            <Col md={6} >
              <TextField

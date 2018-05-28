@@ -26,7 +26,7 @@ class NavigationBar extends Component {
           <Navbar collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand>
-                <Link className="logo" to="home"><img src="http://www.ohmysweetcakes.co.uk/images/logo.png" /></Link>
+                <Link className="logo" to="home">HOMMMMEEEEEE</Link>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>

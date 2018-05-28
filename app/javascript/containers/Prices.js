@@ -14,11 +14,11 @@ const Prices = (props) => {
                <h3 className="price-option-name">ROUND CAKES</h3>
                <div className="price-option-main">
                  <div className="price-option-features">
-                <p> 8"               8-10              $19.99</p>
-                 <p>10"             14-18              $31.99</p>
-                <p> 12"             25-30              $42.99</p>
-                <p> 14"             50-60              $86.99</p>
-              <p>   16"             70-80             $112.99</p>
+                <p className="paragraph"> 8"               8-10              $19.99</p>
+                 <p className="paragraph">10"             14-18              $31.99</p>
+                <p className="paragraph"> 12"             25-30              $42.99</p>
+                <p className="paragraph"> 14"             50-60              $86.99</p>
+              <p className="paragraph">   16"             70-80             $112.99</p>
 
                  </div>
                </div>
@@ -29,9 +29,9 @@ const Prices = (props) => {
                <h3 className="price-option-name highlighted">SHEET CAKES</h3>
                <div className="price-option-main">
                  <div className="price-option-features">
-              <p>   ¼ SHEET         18-20              $26.99</p>
-              <p>   ½ SHEET         40-50              $54.99</p>
-              <p>   FULL SHEET     80-108            $96.99</p>
+              <p className="paragraph">   ¼ SHEET         18-20              $26.99</p>
+              <p className="paragraph">   ½ SHEET         40-50              $54.99</p>
+              <p className="paragraph">   FULL SHEET     80-108            $96.99</p>
                  </div>
                </div>
              </div>
@@ -41,7 +41,7 @@ const Prices = (props) => {
                <h3 className="price-option-name">CUPCAKES </h3>
                <div className="price-option-main">
                  <div className="price-option-features">
-                   <p>$8.00  ½ Dozen             $16.00 Dozen</p>
+                   <p className="paragraph">$8.00  ½ Dozen             $16.00 Dozen</p>
                  </div>
                </div>
              </div>

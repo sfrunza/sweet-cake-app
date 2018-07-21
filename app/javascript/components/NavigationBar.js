@@ -3,6 +3,7 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import { SocialIcon } from 'react-social-icons';
+import  PhoneNumber  from 'react-phone-number';
 
 const NavLink = ({ exact, to, eventKey, children }) =>
   <LinkContainer exact={exact} to={to} eventKey={eventKey}>
@@ -12,15 +13,20 @@ const NavLink = ({ exact, to, eventKey, children }) =>
 class NavigationBar extends Component {
     constructor(props) {
       super(props)
-      }
+      this.state = {
+          number: "613-242-0725"
+          }
+        }
 
     render(){
        return(
          <div className="full-nav">
-          <div className="info-p"><a>Follow us</a>
+          <div className="info-p"><p className="follow-us">Follow us</p>
             <SocialIcon url="http://www.facebook.com" style={{ height: 30, width: 30 }}/>
             <SocialIcon url="https://www.instagram.com" color="#C63DAA" style={{ height: 30, width: 30 }}/>
-            <i className="fas fa-phone"> 617-202-3434</i>
+            <i className="fas fa-phone" ><a href={`tel:${this.state.number}`}>{this.state.number}</a></i>
+
+
           </div>
 
           <Navbar collapseOnSelect>
@@ -42,7 +48,7 @@ class NavigationBar extends Component {
          </div>
 
         )
-    }
+  }
 }
 
 export default NavigationBar;

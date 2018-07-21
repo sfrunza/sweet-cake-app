@@ -60,7 +60,7 @@ class QuestionForm extends Component {
 
   validateName(names) {
     if (names === '' || names === ' ') {
-      let newError = { name: 'Name field may not be blank.' }
+      let newError = { name: 'Name field is required.' }
       this.setState({ errors: Object.assign(this.state.errors, newError) })
       return false
     } else {
@@ -86,7 +86,7 @@ class QuestionForm extends Component {
   }
   validateMessage(messages) {
     if (messages === '' || messages === ' ') {
-      let newError = { message: 'Message field may not be blank.' }
+      let newError = { message: 'Message field is required.' }
       this.setState({ errors: Object.assign(this.state.errors, newError) })
       return false
     } else {

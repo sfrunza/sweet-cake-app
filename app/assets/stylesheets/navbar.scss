@@ -4,6 +4,7 @@
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: red;
   background-color: transparent;
+  border-color: 1px blue;
 }
 
 
@@ -15,7 +16,6 @@
 
 .navbar-default {
    border-color: transparent;
-   -webkit-box-shadow: none;
    background-color: transparent;
 }
 
@@ -54,6 +54,10 @@
 
 .fas.fa-phone {
   font-size: 20px;
+}
+.fas.fa-phone a:hover{
+  color: green;
+  text-decoration: none;
 }
 .full-nav.info-p{
   padding-left: 10%;

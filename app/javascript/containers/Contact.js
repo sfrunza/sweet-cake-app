@@ -8,7 +8,9 @@ class Contact extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      costumers: []
+      costumers: [],
+      number: "613-242-0725",
+      secondNumber: "617-202-2020"
     }
 
     this.addNewMessage = this.addNewMessage.bind(this)
@@ -48,16 +50,16 @@ class Contact extends React.Component {
          <section data-scroll-index="5" className="social bg-darken">
            <div className="container">
              <div className="row social-icons">
-               <a href="http://www.facebook.com" className="social-link col-xs-6 col-sm-3">
+               <a href="http://www.facebook.com" target="_blank" className="social-link col-xs-6 col-sm-3">
                  <span className="social-name"><i className="fa fa-facebook" aria-hidden="true"></i><br></br>facebook</span>
                </a>
-               <a href="https://www.twitter.com" className="social-link col-xs-6 col-sm-3">
+               <a href="https://www.twitter.com" target="_blank" className="social-link col-xs-6 col-sm-3">
                  <span className="social-name"><i className="fa fa-twitter" aria-hidden="true"></i><br></br>twitter</span>
                </a>
-               <a href="https://www.youtube.com" className="social-link col-xs-6 col-sm-3">
+               <a href="https://www.youtube.com" target="_blank" className="social-link col-xs-6 col-sm-3">
                  <span className="social-name"><i className="fa fa-youtube" aria-hidden="true"></i><br></br>youtube</span>
                </a>
-               <a href="https://www.instagram.com" className="social-link col-xs-6 col-sm-3">
+               <a href="https://www.instagram.com" target="_blank" className="social-link col-xs-6 col-sm-3">
                  <span className="social-name"><i className="fa fa-instagram" aria-hidden="true"></i><br></br>instagram</span>
                </a>
              </div>
@@ -66,8 +68,8 @@ class Contact extends React.Component {
          <section className="container">
            <div className="col col-md-4">
                <h4>Phone Numbers</h4>
-                 <p className="paragraph">1-234-567-890</p>
-                 <p className="paragraph">1-987-654-321</p>
+                 <p className="paragraph"><a href={`tel:${this.state.number}`}>{this.state.number}</a></p>
+                 <p className="paragraph"><a href={`tel:${this.state.secondNumber}`}>{this.state.secondNumber}</a></p>
 
                <h4>Email Address</h4>
                 <p className="paragraph">contact@gmail.com</p>

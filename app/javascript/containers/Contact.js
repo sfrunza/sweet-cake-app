@@ -10,7 +10,9 @@ class Contact extends React.Component {
     this.state = {
       costumers: [],
       number: "613-242-0725",
-      secondNumber: "617-202-2020"
+      secondNumber: "617-202-2020",
+      email: "contact@gmail.com"
+
     }
 
     this.addNewMessage = this.addNewMessage.bind(this)
@@ -72,7 +74,7 @@ class Contact extends React.Component {
                  <p className="paragraph"><a href={`tel:${this.state.secondNumber}`}>{this.state.secondNumber}</a></p>
 
                <h4>Email Address</h4>
-                <p className="paragraph">contact@gmail.com</p>
+                <p className="paragraph"><a href={`mailto:${this.state.email}`}>{this.state.email}</a></p>
 
                <h4>Business Hours</h4>
                 <p className="paragraph">Mon-Fri : 9am - 9pm</p>

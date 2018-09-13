@@ -2,45 +2,9 @@
     margin-bottom: 2%;
 }
 
-// .home {
-//   height: 100vh;
-//   min-height: 500px;
-//   background-size: cover;
-//   background-attachment: scroll;
-//   background-image: url("http://www.tokkoro.com/picsup/2623939-cake-4k-best-picture-ever.jpg");
-//   background-position: center center;
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .jumbotron {
-//   position: relative;
-//   text-align: center;
-//   background: rgba(12, 12, 12, 0.7);
-//   width: 100%;
-//   margin: 0;
-//   border-radius: 0;
-//
-// h1 {
-//   font-weight: 300;
-//   font-size: 28px;
-//   margin-bottom: 30px;
-//   font-family: Arial;
-//   text-transform: uppercase;
-//   color: #fff;
-// }
-//
-//   p {
-//     font-weight: 300;
-//     font-size: 16px;
-//     font-family: Arial;
-//     margin: 0;
-//     color: #fff;
-//   }
-// }
 .carousel {
     position: relative;
-    margin-top: 1%;
+    margin-top: 0;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;

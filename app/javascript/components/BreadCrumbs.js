@@ -10,7 +10,7 @@ class BreadCrumbs extends Component {
     }
     render(){
        return(
-         <div id="footer">
+         <div>
             <Breadcrumb className="footer-block">
               <Breadcrumb.Item  href="/home" to="/home">Home</Breadcrumb.Item>
               <Breadcrumb.Item  href="/photo" to="/photo">

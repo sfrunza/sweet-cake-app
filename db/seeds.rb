@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'admin123@mail.com', password: 'password1', password_confirmation: 'password1') if Rails.env.development?
+AdminUser.create!(email: 'admin12345678912345678@mail.com', password: 'password12345678912345678', password_confirmation: 'password12345678912345678') if Rails.env.development?
 
 costumer_first = Costumer.create(
   name: "Sparkling Negroni",
@@ -17,4 +17,86 @@ costumer_second = Costumer.create(
   name: "Pineapple-Jalapeño Margarita",
   email: "linda@mailhot.ru",
   message: "Pour the lime juice and jalapeños into a shaker and muddle with the back of a wood spoon. Fill with ice. Pour in tequila, pineapple juice, and Grand Marnier. Shake until chilled. Dip the rim of a rocks glass in water, then dip it in coarse salt. Fill the glass with ice, and strain the cocktail into the glass. Garnish with pineapple wedge and peel and jalapeño slices."
+)
+
+
+
+
+
+
+
+picture = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture1 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture2 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture3 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture4 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture5 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture6 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture7 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture8 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture9 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture10 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture11 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture12 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture13 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
+)
+picture14 = Picture.create(
+  name: "niceOne",
+  description: "This is a test Picture",
+  picture: "app/public/uploads/picture/picture/6/pexels-photo-106399.jpeg"
 )

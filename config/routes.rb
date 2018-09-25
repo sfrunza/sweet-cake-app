@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   scope '/api' do
     resources :costumers, only: [:index, :create, :destroy, :update]
+    resources :pictures, only: [:index, :create, :destroy, :update]
   end
 end

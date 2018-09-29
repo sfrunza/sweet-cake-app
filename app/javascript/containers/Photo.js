@@ -1,28 +1,53 @@
 import React, { Component } from 'react'
-import { Jumbotron, Button,} from 'react-bootstrap'
-import { Link } from "react-router-dom"
+import PictureTile from '../components/PictureTile'
+import { Grid, Row, Col, Image, Thumbnail, Button } from 'react-bootstrap'
 
 class Photo extends Component {
   constructor(props) {
     super(props);
-    this.handleMouseMove = this.handleMouseMove.bind(this);
-    this.state = { x: 0, y: 0 };
-  }
+    this.state = {
+      pictures: []
+      }
+      
+    }
 
-  handleMouseMove(event) {
-    this.setState({
-      x: event.clientX,
-      y: event.clientY
-    });
-  }
+  componentDidMount() {
+  fetch('/api/pictures')
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+            error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      let newPictures = body;
+      this.setState({ pictures: newPictures });
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+}
 
   render() {
+    let pictures = this.state.pictures.map(picture => {
+      return(
+        <PictureTile
+          key={picture.id}
+          name={picture.name}
+          picture={picture.picture}
+          description={picture.description}
+          id={picture.id}
+        />
+      )
+    })
     return (
-      <div style={{ height: '100%' }} onMouseMove={this.handleMouseMove}>
-        <h1>Move the mouse around!</h1>
-        <p>The current mouse position is ({this.state.x}, {this.state.y})</p>
-
-      </div>
+      <Grid className="pictures-container">
+        <Row className="photos-container">
+          {pictures}
+        </Row>
+      </Grid>
     );
   }
 }

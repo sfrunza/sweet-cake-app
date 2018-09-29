@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
 
     return (
-      <div className="index" style={{ width: '100%' }}>
+      <div className="index" style={{ width: '100%' }} >
         <Carousel>
           <Carousel.Item>
             <Image width={900}   src="https://images.unsplash.com/photo-1528643445466-1f204fbd8f88?ixlib=rb-0.3.5&s=9f2cb9f361be900e06eaf7b7db613f74&auto=format&fit=crop&w=2100&q=80" />

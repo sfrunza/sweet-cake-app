@@ -8,9 +8,10 @@ class BreadCrumbs extends Component {
       super(props);
 
     }
+
     render(){
        return(
-         <div>
+
             <Breadcrumb className="footer-block">
               <Breadcrumb.Item  href="/home" to="/home">Home</Breadcrumb.Item>
               <Breadcrumb.Item  href="/photo" to="/photo">
@@ -22,10 +23,8 @@ class BreadCrumbs extends Component {
               Copyright © Sweet-Cakes - All Rights Reserved.
               </p>
             </Breadcrumb>
-        </div>
-
- )
-}
-}
+          )
+        }
+    }
 
 export default BreadCrumbs;

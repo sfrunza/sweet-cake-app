@@ -32,13 +32,13 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 1.6;
-  margin-bottom: 0.25rem;
   text-rendering: optimizeLegibility;
   border-bottom-style: groove;
   border-width: 1.1px;
   padding-right: 1%;
   text-align: right;
   padding-top: 0.5%;
+  vertical-align: middle;
 }
 
 .navbar-brand>img {
@@ -54,6 +54,7 @@
 
 .fas.fa-phone {
   font-size: 20px;
+  vertical-align: middle;
 }
 .fas.fa-phone a:hover{
   color: pink;
@@ -71,4 +72,35 @@
   display: inline-block;
   position: relative;
   margin-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  margin-bottom: 0px;
+}
+.fas.fa-home{
+  padding-right: 8px;
+}
+.far.fa-images{
+  padding-right: 8px;
+}
+.fas.fa-dollar-sign{
+  padding-right: 8px;
+}
+.far.fa-address-book{
+  padding-right: 8px;
+}
+.follow-us a {
+  margin-top: 10px;
+}
+.fab.fa-instagram{
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.fab.fa-facebook-square{
+  vertical-align: middle;
+}
+.fa-instagram:hover {
+    color: #c13584;
+}
+.fab.fa-facebook-square:hover{
+  color: #3B5998;
 }

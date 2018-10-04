@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TextField from '../components/TextField'
-import { Col, Row, Alert} from 'react-bootstrap'
+import { Col, Row, Alert, Button, ButtonToolbar} from 'react-bootstrap'
 
 class QuestionForm extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class QuestionForm extends Component {
         message: this.state.message,
         success: this.state.success
       }
-      this.props.addNewMessage(formPayLoad)
+      this.props.addNewMessage(formPayLoad);
       this.handleClearForm(event)
       let newSuccess = {success: 'Your message has been sent'}
       this.setState({ success: Object.assign(this.state.success, newSuccess) })
@@ -150,9 +150,10 @@ class QuestionForm extends Component {
             value={this.state.message}
             handleChange={this.handleChange}
             />
-          <div className="button-group">
-            <input className="button" type="submit" value="Send Message" />
-          </div>
+          <ButtonToolbar>
+            <Button onClick={this.handleFormSubmit} bsStyle="success">Send Message</Button>
+            <Button bsStyle="default" onClick={this.handleClearForm}>Clear</Button>
+		  	  </ButtonToolbar>
         </form>
       </Row>
     )

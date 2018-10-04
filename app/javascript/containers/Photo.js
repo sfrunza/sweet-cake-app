@@ -8,7 +8,7 @@ class Photo extends Component {
     this.state = {
       pictures: []
       }
-      
+
     }
 
   componentDidMount() {

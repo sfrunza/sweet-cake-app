@@ -2,15 +2,14 @@ import React from 'react';
 import { Jumbotron, Button, Col, Row} from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import EmailForm from './EmailForm'
-import { SocialIcon } from 'react-social-icons';
 
 class Contact extends React.Component {
   constructor(props){
     super(props)
     this.state = {
       costumers: [],
-      number: "613-242-0725",
-      secondNumber: "617-202-2020",
+      number: "+1 613-242-0725",
+      secondNumber: "+1 617-877-1450",
       email: "contact@gmail.com"
 
     }
@@ -69,14 +68,14 @@ class Contact extends React.Component {
          </section>
          <section className="container">
            <div className="col col-md-4">
-               <h4>Phone Numbers</h4>
+               <h4><i className="fa fa-phone mt-4 fa-2x"></i></h4>
                  <p className="paragraph"><a href={`tel:${this.state.number}`}>{this.state.number}</a></p>
                  <p className="paragraph"><a href={`tel:${this.state.secondNumber}`}>{this.state.secondNumber}</a></p>
 
-               <h4>Email Address</h4>
+               <h4><i className="fa fa-envelope mt-4 fa-2x"></i></h4>
                 <p className="paragraph"><a href={`mailto:${this.state.email}`}>{this.state.email}</a></p>
 
-               <h4>Business Hours</h4>
+               <h4><i className="fas fa-clock mt-4 fa-2x"></i></h4>
                 <p className="paragraph">Mon-Fri : 9am - 9pm</p>
                 <p className="paragraph">Sat : 9am - 2pm</p>
             </div>

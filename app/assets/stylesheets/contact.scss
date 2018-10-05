@@ -119,3 +119,7 @@ input[type="submit"] {
   display: grid;
   width: 100%;
 }
+.btn-toolbar>.btn {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}

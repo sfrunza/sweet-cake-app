@@ -9,6 +9,7 @@
   "dependencies": {
     "@rails/webpacker": "~3.2.0",
     "aos": "^2.2.0",
+    "react-scripts": "1.0.17",
     "babel-preset-react": "~6.24.1",
     "prop-types": "~15.6.0",
     "react": "^15.4.2",

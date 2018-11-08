@@ -12,7 +12,7 @@ class Photo extends Component {
     }
 
   componentDidMount() {
-  fetch('/api/pictures')
+  fetch('https://sweet-cake.herokuapp.com/api/pictures')
     .then(response => {
       if (response.ok) {
         return response;

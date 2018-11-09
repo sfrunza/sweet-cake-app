@@ -18,7 +18,7 @@ class Contact extends React.Component {
   }
 
   addNewMessage(formPayload) {
-    fetch(`https://sweet-cake.herokuapp.com/api/costumers`, {
+    fetch(`/api/costumers`, {
       credentials: 'same-origin',
       method: 'POST',
       body: JSON.stringify(formPayload),
